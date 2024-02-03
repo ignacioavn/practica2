@@ -55,4 +55,8 @@ class User extends Authenticatable
     public function Hobbies(){
         return $this->hasMany(Hobbie::class);
     }
+
+    public function Social_Networks(){
+        return $this->hasMany(SocialNetwork::class);
+    }
 }
