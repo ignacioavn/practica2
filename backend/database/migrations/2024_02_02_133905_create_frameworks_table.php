@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('frameworks', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('level');
-            $table->integer('year');
+            $table->string('difficulty');
+            $table->string('experience');
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
         });
     }
